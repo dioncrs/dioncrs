@@ -91,7 +91,7 @@ async function main() {
     const id = pokemon.id.toString().padStart(3, "0");
     const name = capitalizeFirstLetter(pokemon.name);
     const imgUrl = `${pokemonImgUrl}${id}.png`;
-    const user = "dion"; //core.getInput("user");
+    const user = core.getInput("user");
 
     database.updateLogs({ id: pokemon.id, name: pokemon.name, level, user });
     database.updateTotals({ id: pokemon.id, name: pokemon.name });
