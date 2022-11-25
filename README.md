@@ -12,13 +12,16 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-[dioncrs](https://www.github.com/dioncrs) catch a **Rhyhorn** level **90**!
+[dioncrs](https://www.github.com/dioncrs) catch a **Persian** level **30**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/111.png)
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/053.png)
 ### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
 |rhyhorn|1
+|persian|1
+### Pokemon trainers!
 |User|Pokemon|Level|Date|
 |-|-|-|-|
 |dioncrs|rhyhorn|90|25-11-2022
+|dioncrs|persian|30|25-11-2022
