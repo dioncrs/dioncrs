@@ -75,8 +75,9 @@ function getCatchListTable() {
   const catchList = getCatchDatabase();
   let table = "";
   table += "|Pokemon|Count|\n";
+  table += "|-|-|\n";
   catchList.forEach((pokemon) => {
-    table += "|" + pokemon.name + "|" + pokemon.count + "|\n";
+    table += "|" + pokemon.name + "|" + pokemon.count + "\n";
   });
   return table;
 }
