@@ -1,4 +1,4 @@
-## Hi, I'm Dion! Welcome to my profile!👋
+# Hi, I'm Dion! Welcome to my profile!👋
 
 - :bank: I’m currently working at @Itau by @NTTDATA
 - :rocket: I’m currently learning C++ and Game Design
