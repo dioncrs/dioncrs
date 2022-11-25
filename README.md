@@ -12,5 +12,11 @@
 # Let's play a little?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=catch&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-### [dioncrs](https://www.github.com/dioncrs) catch a Raichu level 22
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png)
+### [dioncrs](https://www.github.com/dioncrs) catch a Kakuna level 78!
+
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png)
+### Total pokemon caught!
+|Pokemon|Count|
+|bulba|2|
+|pika|1|
+|kakuna|1|
