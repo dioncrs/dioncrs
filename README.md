@@ -12,9 +12,9 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-[johndj68](https://www.github.com/johndj68) catch a **Raticate** level **53**!
+[guilhermeac36](https://www.github.com/guilhermeac36) catch a **Ditto** level **94**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png)
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png)
 ### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
@@ -25,3 +25,4 @@
 |onix|1
 |jolteon|1
 |raticate|1
+|ditto|1
