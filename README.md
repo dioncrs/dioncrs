@@ -12,18 +12,20 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-[dioncrs](https://www.github.com/dioncrs) catch a **Weezing** level **48**!
+[dioncrs](https://www.github.com/dioncrs) catch a **Abra** level **69**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/110.png)
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png)
 ### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
 |rhyhorn|1
 |persian|1
 |weezing|1
+|abra|1
 ### Pokemon trainers!
 |Trainer|Pokemon|Level|Date|
 |-|-|-|-|
-|dioncrs|rhyhorn|90|25-11-2022
-|dioncrs|persian|30|25-11-2022
+|dioncrs|abra|69|25-11-2022
 |dioncrs|weezing|48|25-11-2022
+|dioncrs|persian|30|25-11-2022
+|dioncrs|rhyhorn|90|25-11-2022
