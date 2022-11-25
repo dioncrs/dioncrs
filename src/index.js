@@ -106,6 +106,7 @@ async function main() {
     content += pokemonPic;
     content += "### Total pokemon caught!\n";
     content += getTotalListTable();
+    content += "### Pokemon trainers!\n";
     content += getLogListTable();
 
     fs.writeFileSync("./README.md", content);
