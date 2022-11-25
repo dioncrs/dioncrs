@@ -12,21 +12,13 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
+[dioncrs](https://www.github.com/dioncrs) catch a **Rhyhorn** level **90**!
 
-[dioncrs](https://www.github.com/dioncrs) catch a **Parasect** level **16**!
-
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png)
-
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/111.png)
 ### Total pokemon caught!
-
-| Pokemon   | Count |
-| --------- | ----- |
-| bulbasaur | 1     |
-| caterpie  | 1     |
-| dugtrio   | 1     |
-| hitmonlee | 1     |
-| onix      | 1     |
-| jolteon   | 1     |
-| raticate  | 1     |
-| ditto     | 1     |
-| parasect  | 1     |
+|Pokemon|Count|
+|-|-|
+|rhyhorn|1
+|User|Pokemon|Level|Date|
+|-|-|-|-|
+|dioncrs|rhyhorn|90|25-11-2022
