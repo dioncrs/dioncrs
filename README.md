@@ -11,6 +11,6 @@
 
 # Let's play a little?
 
-### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=catch&body=Just+click+%27Submit+new+issue%27.) a pokemon right now!
-#### You catch a Nidoran-f level 77
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png)
+### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=catch&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
+### [dioncrs](https://www.github.com/dioncrs) catch a Raichu level 22
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png)
