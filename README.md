@@ -12,30 +12,20 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-[dion](https://www.github.com/dion) catch a **Meowth** level **52**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png)
+[guilhermeac36](https://www.github.com/guilhermeac36) catch a **Ditto** level **94**!
+
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png)
+
 ### Total pokemon caught!
-|Pokemon|Count|
-|-|-|
-|bulbasaur |1
-|caterpie|1
-|dugtrio|1
-|hitmonlee|1
-|koffing|1
-|jynx|1
-|moltres|1
-|charmander|1
-|magnemite|1
-|victreebel|1
-|electabuzz|1
-|meowth|1
-|User|Pokemon|Level|Date|
-|-|-|-|-|
-|dion|jynx|undefined|25-11-2022
-|dion|moltres|undefined|25-11-2022
-|dion|charmander|94|25-11-2022
-|dion|magnemite|60|25-11-2022
-|dion|victreebel|57|25-11-2022
-|dion|electabuzz|92|25-11-2022
-|dion|meowth|52|25-11-2022
+
+| Pokemon   | Count |
+| --------- | ----- |
+| bulbasaur | 1     |
+| caterpie  | 1     |
+| dugtrio   | 1     |
+| hitmonlee | 1     |
+| onix      | 1     |
+| jolteon   | 1     |
+| raticate  | 1     |
+| ditto     | 1     |
