@@ -58,7 +58,7 @@ function getTotalListTable() {
 function getLogListTable() {
   const logs = database.getLogs();
   let table = "";
-  table += "|User|Pokemon|Level|Date|\n";
+  table += "|Trainer|Pokemon|Level|Date|\n";
   table += "|-|-|-|-|\n";
   logs.forEach((log) => {
     const d = new Date(log.date);
