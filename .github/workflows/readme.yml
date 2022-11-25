@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          git pull origin master
+          git pull origin main
       - name: Catch a Pokemon
         uses: ./src
         id: catch
@@ -22,7 +22,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git commit -m "Add changes" -a
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Close Issue
