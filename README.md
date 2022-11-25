@@ -9,12 +9,12 @@
 - 😄 Pronouns: He
 - ⚡ Fun fact: Everyone has already made an update without WHERE, if you haven't, don't worry, your day will come.
 
-# Let's play a little?
+# Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-### [dioncrs](https://www.github.com/dioncrs) catch a Hitmonlee level 79!
+[dion](https://www.github.com/dion) catch a **Meowth** level **52**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/106.png)
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png)
 ### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
@@ -22,3 +22,20 @@
 |caterpie|1
 |dugtrio|1
 |hitmonlee|1
+|koffing|1
+|jynx|1
+|moltres|1
+|charmander|1
+|magnemite|1
+|victreebel|1
+|electabuzz|1
+|meowth|1
+|User|Pokemon|Level|Date|
+|-|-|-|-|
+|dion|jynx|undefined|25-11-2022
+|dion|moltres|undefined|25-11-2022
+|dion|charmander|94|25-11-2022
+|dion|magnemite|60|25-11-2022
+|dion|victreebel|57|25-11-2022
+|dion|electabuzz|92|25-11-2022
+|dion|meowth|52|25-11-2022

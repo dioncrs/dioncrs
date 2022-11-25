@@ -1,8 +1,8 @@
 const fs = require("fs");
 const https = require("https");
 const core = require("@actions/core");
+const database = require("./database");
 
-const databaseFileName = "./src/database.json";
 const totalPokemons = 151; //1ª generation.
 const pokemonAPIUrl = "https://pokeapi.co/api/v2/pokemon/";
 const pokemonImgUrl =
@@ -44,40 +44,36 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function saveCatch(databaseList) {
-  fs.writeFileSync(databaseFileName, databaseList);
-}
-
-function getCatchDatabase() {
-  const databaseFile = fs.readFileSync(databaseFileName, "utf8");
-  return JSON.parse(databaseFile.toString());
-}
-
-function updateDatabase({ id, name }) {
-  const catchList = getCatchDatabase();
-  let pokemon = catchList.find((pkm) => pkm.id == id);
-
-  if (!pokemon) {
-    pokemon = {
-      id,
-      name,
-      count: 0,
-    };
-    catchList.push(pokemon);
-  }
-
-  pokemon.count += 1;
-
-  fs.writeFileSync(databaseFileName, JSON.stringify(catchList));
-}
-
-function getCatchListTable() {
-  const catchList = getCatchDatabase();
+function getTotalListTable() {
+  const catchList = database.getTotals();
   let table = "";
   table += "|Pokemon|Count|\n";
   table += "|-|-|\n";
   catchList.forEach((pokemon) => {
     table += "|" + pokemon.name + "|" + pokemon.count + "\n";
+  });
+  return table;
+}
+
+function getLogListTable() {
+  const logs = database.getLogs();
+  let table = "";
+  table += "|User|Pokemon|Level|Date|\n";
+  table += "|-|-|-|-|\n";
+  logs.forEach((log) => {
+    const d = new Date(log.date);
+    const datestring =
+      d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear();
+    table +=
+      "|" +
+      log.user +
+      "|" +
+      log.name +
+      "|" +
+      log.level +
+      "|" +
+      datestring +
+      "\n";
   });
   return table;
 }
@@ -95,9 +91,10 @@ async function main() {
     const id = pokemon.id.toString().padStart(3, "0");
     const name = capitalizeFirstLetter(pokemon.name);
     const imgUrl = `${pokemonImgUrl}${id}.png`;
-    const user = core.getInput("user");
+    const user = "dion"; //core.getInput("user");
 
-    updateDatabase({ id: pokemon.id, name: pokemon.name });
+    database.updateLogs({ id: pokemon.id, name: pokemon.name, level, user });
+    database.updateTotals({ id: pokemon.id, name: pokemon.name });
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
     const msg = `\n[${user}](https://www.github.com/${user}) catch a **${name}** level **${level}**!\n`;
@@ -108,7 +105,8 @@ async function main() {
     content += msg;
     content += pokemonPic;
     content += "### Total pokemon caught!\n";
-    content += getCatchListTable();
+    content += getTotalListTable();
+    content += getLogListTable();
 
     fs.writeFileSync("./README.md", content);
   } catch (error) {
