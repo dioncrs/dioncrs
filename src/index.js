@@ -100,7 +100,7 @@ async function main() {
     updateDatabase({ id: pokemon.id, name: pokemon.name });
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
-    const msg = `\n### [${user}](https://www.github.com/${user}) catch a ${name} level ${level}!\n`;
+    const msg = `\n[${user}](https://www.github.com/${user}) catch a **${name}** level **${level}**!\n`;
     const pokemonPic = `\n![pokemon pic](${imgUrl})\n`;
 
     let content = "";
