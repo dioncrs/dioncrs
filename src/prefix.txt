@@ -11,4 +11,4 @@
 
 # Let's play a little?
 
-### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=catch&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon) a pokemon right now!
+### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=catch&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
