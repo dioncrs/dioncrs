@@ -1,5 +1,6 @@
 const fs = require("fs");
 const https = require("https");
+const core = require("@actions/core");
 
 const totalPokemons = 151; //1ª generation.
 const pokemonAPIUrl = "https://pokeapi.co/api/v2/pokemon/";
@@ -55,9 +56,10 @@ async function main() {
     const id = pokemon.id.toString().padStart(3, "0");
     const name = capitalizeFirstLetter(pokemon.name);
     const imgUrl = `${pokemonImgUrl}${id}.png`;
+    const user = core.getInput("user");
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
-    const msg = `\n#### You catch a ${name} level ${level}`;
+    const msg = `\n### [${user}](https://www.github.com/${user}) catch a ${name} level ${level}`;
     const pokemonPic = `\n![pokemon pic](${imgUrl})`;
 
     let content = "";

@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dioncrs/dioncrs/issues"
   },
-  "homepage": "https://github.com/dioncrs/dioncrs#readme"
+  "homepage": "https://github.com/dioncrs/dioncrs#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
 }
