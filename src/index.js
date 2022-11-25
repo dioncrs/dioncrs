@@ -2,6 +2,7 @@ const fs = require("fs");
 const https = require("https");
 const core = require("@actions/core");
 
+const databaseFileName = "./src/database.json";
 const totalPokemons = 151; //1ª generation.
 const pokemonAPIUrl = "https://pokeapi.co/api/v2/pokemon/";
 const pokemonImgUrl =
@@ -43,6 +44,43 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function saveCatch(databaseList) {
+  fs.writeFileSync(databaseFileName, databaseList);
+}
+
+function getCatchDatabase() {
+  const databaseFile = fs.readFileSync(databaseFileName, "utf8");
+  return JSON.parse(databaseFile.toString());
+}
+
+function updateDatabase({ id, name }) {
+  const catchList = getCatchDatabase();
+  let pokemon = catchList.find((pkm) => pkm.id == id);
+
+  if (!pokemon) {
+    pokemon = {
+      id,
+      name,
+      count: 0,
+    };
+    catchList.push(pokemon);
+  }
+
+  pokemon.count += 1;
+
+  fs.writeFileSync(databaseFileName, JSON.stringify(catchList));
+}
+
+function getCatchListTable() {
+  const catchList = getCatchDatabase();
+  let table = "";
+  table += "|Pokemon|Count|\n";
+  catchList.forEach((pokemon) => {
+    table += "|" + pokemon.name + "|" + pokemon.count + "|\n";
+  });
+  return table;
+}
+
 async function main() {
   try {
     const pokemon = await getRandomPokemon();
@@ -58,14 +96,18 @@ async function main() {
     const imgUrl = `${pokemonImgUrl}${id}.png`;
     const user = core.getInput("user");
 
+    updateDatabase({ id: pokemon.id, name: pokemon.name });
+
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
-    const msg = `\n### [${user}](https://www.github.com/${user}) catch a ${name} level ${level}`;
-    const pokemonPic = `\n![pokemon pic](${imgUrl})`;
+    const msg = `\n### [${user}](https://www.github.com/${user}) catch a ${name} level ${level}!\n`;
+    const pokemonPic = `\n![pokemon pic](${imgUrl})\n`;
 
     let content = "";
     content += prefixFile.toString();
     content += msg;
     content += pokemonPic;
+    content += "### Total pokemon caught!\n";
+    content += getCatchListTable();
 
     fs.writeFileSync("./README.md", content);
   } catch (error) {
