@@ -60,7 +60,8 @@ function getLogListTable() {
   let table = "";
   table += "|Trainer|Pokemon|Level|Date|\n";
   table += "|-|-|-|-|\n";
-  logs.forEach((log) => {
+  logs.sort((a, b) => (a.date < b.date ? 1 : -1));
+  logs.slice(0, 10).forEach((log) => {
     const d = new Date(log.date);
     const datestring =
       d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear();
