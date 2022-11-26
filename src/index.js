@@ -2,6 +2,7 @@ const fs = require("fs");
 const https = require("https");
 const core = require("@actions/core");
 const database = require("./database");
+const markdown = require("./markdown");
 
 const totalPokemons = 151; //1ª generation.
 const pokemonAPIUrl = "https://pokeapi.co/api/v2/pokemon/";
@@ -10,6 +11,12 @@ const pokemonImgUrl =
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
+}
+
+async function getRandomPokemon() {
+  const pokemonNumber = getRandomInt(totalPokemons + 1);
+  const pokemon = await get(pokemonAPIUrl + pokemonNumber);
+  return pokemon;
 }
 
 async function get(url) {
@@ -34,49 +41,8 @@ async function get(url) {
   });
 }
 
-async function getRandomPokemon() {
-  const pokemonNumber = getRandomInt(totalPokemons + 1);
-  const pokemon = await get(pokemonAPIUrl + pokemonNumber);
-  return pokemon;
-}
-
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function getTotalListTable() {
-  const catchList = database.getTotals();
-  let table = "";
-  table += "|Pokemon|Count|\n";
-  table += "|-|-|\n";
-  catchList.forEach((pokemon) => {
-    table += "|" + pokemon.name + "|" + pokemon.count + "\n";
-  });
-  return table;
-}
-
-function getLogListTable() {
-  const logs = database.getLogs();
-  let table = "";
-  table += "|Trainer|Pokemon|Level|Date|\n";
-  table += "|-|-|-|-|\n";
-  logs.sort((a, b) => (a.date < b.date ? 1 : -1));
-  logs.slice(0, 10).forEach((log) => {
-    const d = new Date(log.date);
-    const datestring =
-      d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear();
-    table +=
-      "|" +
-      log.user +
-      "|" +
-      log.name +
-      "|" +
-      log.level +
-      "|" +
-      datestring +
-      "\n";
-  });
-  return table;
 }
 
 async function main() {
@@ -88,17 +54,20 @@ async function main() {
       return;
     }
 
+    const { id, name } = pokemon;
     const level = getRandomInt(100);
-    const id = pokemon.id.toString().padStart(3, "0");
-    const name = capitalizeFirstLetter(pokemon.name);
-    const imgUrl = `${pokemonImgUrl}${id}.png`;
-    const user = core.getInput("user");
-
-    database.updateLogs({ id: pokemon.id, name: pokemon.name, level, user });
-    database.updateTotals({ id: pokemon.id, name: pokemon.name });
+    const imgUrl = `${pokemonImgUrl}${id.toString().padStart(3, "0")}.png`;
+    const user = "drop"; //core.getInput("user");
+    const logs = database.getDatabase();
+    const date = Date.now();
+    logs.push({ id, name, level, user, date });
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
-    const msg = `\n[${user}](https://www.github.com/${user}) catch a **${name}** level **${level}**!\n`;
+
+    const msg = `\n[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
+      pokemon.name
+    )}** level **${level}**!\n`;
+
     const pokemonPic = `\n![pokemon pic](${imgUrl})\n`;
 
     let content = "";
@@ -106,9 +75,13 @@ async function main() {
     content += msg;
     content += pokemonPic;
     content += "### Total pokemon caught!\n";
-    content += getTotalListTable();
-    content += "### Pokemon trainers!\n";
-    content += getLogListTable();
+    content += markdown.getTotalPokemonsTable(logs);
+    content += "### Top 5 trainers!\n";
+    content += markdown.getTopTrainersTable(logs);
+    content += "### Last 10 trainers!\n";
+    content += markdown.getLastTrainersTable(logs);
+
+    database.updateDatabase(logs);
 
     fs.writeFileSync("./README.md", content);
   } catch (error) {
