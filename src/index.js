@@ -57,7 +57,7 @@ async function main() {
     const { id, name } = pokemon;
     const level = getRandomInt(100);
     const imgUrl = `${pokemonImgUrl}${id.toString().padStart(3, "0")}.png`;
-    const user = "drop"; //core.getInput("user");
+    const user = core.getInput("user");
     const logs = database.getDatabase();
     const date = Date.now();
     logs.push({ id, name, level, user, date });
