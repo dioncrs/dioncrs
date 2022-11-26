@@ -12,9 +12,9 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-[Azumerai](https://www.github.com/Azumerai) catch a **Nidorina** level **91**!
+[drop](https://www.github.com/drop) catch a **Hypno** level **74**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png)
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png)
 ### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
@@ -24,9 +24,17 @@
 |abra|1
 |nidoran-m|1
 |nidorina|1
-### Pokemon trainers!
+|hypno|1
+### Top 5 trainers!
+|Trainer|Pokemons Caught|
+|-|-|
+|dioncrs|5
+|Azumerai|2
+|drop|1
+### Last 10 trainers!
 |Trainer|Pokemon|Level|Date|
 |-|-|-|-|
+|drop|hypno|74|26-11-2022
 |Azumerai|nidorina|91|26-11-2022
 |Azumerai|persian|82|26-11-2022
 |dioncrs|nidoran-m|10|25-11-2022
