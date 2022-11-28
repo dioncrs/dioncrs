@@ -12,28 +12,30 @@
 # Let's play?
 
 ### Try to [CATCH!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) a pokemon right now!
-[dioncrs](https://www.github.com/dioncrs) catch a **Vileplume** level **30**!
+[dioncrs](https://www.github.com/dioncrs) catch a **Seadra** level **14**!
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png)
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/117.png)
 ### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
+|vileplume|1
 |nidorina|1
 |persian|1
 |ditto|1
 |raticate|1
 |rhyhorn|1
-|vileplume|1
+|seadra|1
 ### Top 5 trainers!
 |Trainer|Pokemons Caught|
 |-|-|
-|dioncrs|2
+|dioncrs|3
 |Azumerai|2
 |johndj68|1
 |guilhermeac36|1
 ### Last 10 trainers!
 |Trainer|Pokemon|Level|Date|
 |-|-|-|-|
+|dioncrs|seadra|14|28-11-2022
 |dioncrs|vileplume|30|26-11-2022
 |Azumerai|nidorina|91|26-11-2022
 |Azumerai|persian|82|26-11-2022
