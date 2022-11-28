@@ -10,33 +10,20 @@
 - ⚡ Fun fact: Everyone has already made an update without WHERE, if you haven't, don't worry, your day will come.
 
 # Let's play? Click [HERE!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) to catch a pokemon!
-[dioncrs](https://www.github.com/dioncrs) catch a **Rapidash** level **54**!
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/140.png)
 
-![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png)
----
-### Total pokemon caught!
-|Pokemon|Count|
-|-|-|
-|dragonite|1
-|ponyta|1
-|seadra|1
-|vileplume|1
-|nidorina|1
-|persian|1
-|ditto|1
-|raticate|1
-|rhyhorn|1
-|rapidash|1
+## [dioncrs](https://www.github.com/dioncrs) catch a **Kabuto** level **11**!
 ### Top 5 trainers!
 |Trainer|Pokemons Caught|
 |-|-|
-|dioncrs|6
+|dioncrs|7
 |Azumerai|2
 |johndj68|1
 |guilhermeac36|1
 ### Last 10 catches!
 |Trainer|Pokemon|Level|Date|
 |-|-|-|-|
+|dioncrs|kabuto|11|28-11-2022
 |dioncrs|rapidash|54|28-11-2022
 |dioncrs|dragonite|58|28-11-2022
 |dioncrs|ponyta|47|28-11-2022
@@ -46,5 +33,18 @@
 |Azumerai|persian|82|26-11-2022
 |guilhermeac36|ditto|94|25-11-2022
 |johndj68|raticate|53|25-11-2022
-|dioncrs|rhyhorn|90|25-11-2022
+### Total pokemon caught!
+|Pokemon|Count|
+|-|-|
+|kabuto|1
+|rapidash|1
+|dragonite|1
+|ponyta|1
+|seadra|1
+|vileplume|1
+|nidorina|1
+|persian|1
+|ditto|1
+|raticate|1
+|rhyhorn|1
 > How? Just send a new issue, wait a few seconds and come back here!
