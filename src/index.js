@@ -75,12 +75,12 @@ async function main() {
     content += msg;
     content += pokemonPic;
     content += "---\n";
-    content += "### Total pokemon caught!\n";
-    content += markdown.getTotalPokemonsTable(logs);
     content += "### Top 5 trainers!\n";
     content += markdown.getTopTrainersTable(logs);
     content += "### Last 10 catches!\n";
     content += markdown.getLastTrainersTable(logs);
+    content += "### Total pokemon caught!\n";
+    content += markdown.getTotalPokemonsTable(logs);
     content +=
       "> How? Just send a new issue, wait a few seconds and come back here!";
 
