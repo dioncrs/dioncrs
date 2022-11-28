@@ -78,7 +78,7 @@ async function main() {
     content += markdown.getTotalPokemonsTable(logs);
     content += "### Top 5 trainers!\n";
     content += markdown.getTopTrainersTable(logs);
-    content += "### Last 10 trainers!\n";
+    content += "### Last 10 catches!\n";
     content += markdown.getLastTrainersTable(logs);
 
     database.updateDatabase(logs);
