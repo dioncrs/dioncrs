@@ -10,12 +10,13 @@
 - ⚡ Fun fact: Everyone has already made an update without WHERE, if you haven't, don't worry, your day will come.
 
 # Let's play? Click [HERE!](https://github.com/dioncrs/dioncrs/issues/new?title=Catch+a+Pokemon&body=Just+click+%27Submit+new+issue%27+and+catch+a+pokemon.) to catch a pokemon!
-<center>[dioncrs](https://www.github.com/dioncrs) catch a **Ponyta** level **47**!</center>
+<center>[dioncrs](https://www.github.com/dioncrs) catch a **Dragonite** level **58**!
 
-<center>![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png)</center>
-### Total pokemon caught!
+![pokemon pic](https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png)</center>
+---### Total pokemon caught!
 |Pokemon|Count|
 |-|-|
+|ponyta|1
 |seadra|1
 |vileplume|1
 |nidorina|1
@@ -23,17 +24,18 @@
 |ditto|1
 |raticate|1
 |rhyhorn|1
-|ponyta|1
+|dragonite|1
 ### Top 5 trainers!
 |Trainer|Pokemons Caught|
 |-|-|
-|dioncrs|4
+|dioncrs|5
 |Azumerai|2
 |johndj68|1
 |guilhermeac36|1
 ### Last 10 catches!
 |Trainer|Pokemon|Level|Date|
 |-|-|-|-|
+|dioncrs|dragonite|58|28-11-2022
 |dioncrs|ponyta|47|28-11-2022
 |dioncrs|seadra|14|28-11-2022
 |dioncrs|vileplume|30|26-11-2022
