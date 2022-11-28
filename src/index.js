@@ -64,17 +64,17 @@ async function main() {
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
 
-    const msg = `\n<center>[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
+    const msg = `\n[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
       pokemon.name
     )}** level **${level}**!\n`;
 
-    const pokemonPic = `\n![pokemon pic](${imgUrl})</center>\n`;
+    const pokemonPic = `\n![pokemon pic](${imgUrl})\n`;
 
     let content = "";
     content += prefixFile.toString();
     content += msg;
     content += pokemonPic;
-    content += "---";
+    content += "---\n";
     content += "### Total pokemon caught!\n";
     content += markdown.getTotalPokemonsTable(logs);
     content += "### Top 5 trainers!\n";
