@@ -64,7 +64,7 @@ async function main() {
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
 
-    const msg = `\n[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
+    const msg = `\n## [${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
       pokemon.name
     )}** level **${level}**!\n`;
 
@@ -72,9 +72,8 @@ async function main() {
 
     let content = "";
     content += prefixFile.toString();
-    content += msg;
     content += pokemonPic;
-    content += "---\n";
+    content += msg;
     content += "### Top 5 trainers!\n";
     content += markdown.getTopTrainersTable(logs);
     content += "### Last 10 catches!\n";
