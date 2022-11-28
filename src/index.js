@@ -66,14 +66,15 @@ async function main() {
 
     const msg = `\n<center>[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
       pokemon.name
-    )}** level **${level}**!</center>\n`;
+    )}** level **${level}**!\n`;
 
-    const pokemonPic = `\n<center>![pokemon pic](${imgUrl})</center>\n`;
+    const pokemonPic = `\n![pokemon pic](${imgUrl})</center>\n`;
 
     let content = "";
     content += prefixFile.toString();
     content += msg;
     content += pokemonPic;
+    content += "---";
     content += "### Total pokemon caught!\n";
     content += markdown.getTotalPokemonsTable(logs);
     content += "### Top 5 trainers!\n";
