@@ -64,11 +64,11 @@ async function main() {
 
     const prefixFile = fs.readFileSync("./src/prefix.txt", "utf8");
 
-    const msg = `\n[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
+    const msg = `\n<center>[${user}](https://www.github.com/${user}) catch a **${capitalizeFirstLetter(
       pokemon.name
-    )}** level **${level}**!\n`;
+    )}** level **${level}**!</center>\n`;
 
-    const pokemonPic = `\n![pokemon pic](${imgUrl})\n`;
+    const pokemonPic = `\n<center>![pokemon pic](${imgUrl})</center>\n`;
 
     let content = "";
     content += prefixFile.toString();
@@ -80,6 +80,8 @@ async function main() {
     content += markdown.getTopTrainersTable(logs);
     content += "### Last 10 catches!\n";
     content += markdown.getLastTrainersTable(logs);
+    content +=
+      "> How? Just send a new issue, wait a few seconds and come back here!";
 
     database.updateDatabase(logs);
 
